@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ece5de"
+    android:orientation="vertical"
+    tools:context=".Activity.FirstActicity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/cvcontinue"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/layerss" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/imagebag" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get started"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:textColor="#1C1C1C"
+        android:fontFamily="@font/gilroy_medium"/>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#F4B517" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="''"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="-10dp"
+            android:textColor="#777777"
+            android:fontFamily="@font/gilroy_bold"/>
+    <TextView
+        android:id="@+id/selectid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Lorem ipsum dolor sit amet, consectetur "
+        android:textColor="#777777"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="adipisicing elit, sed do eiusmod. "
+        android:textColor="#777777"
+        android:textSize="15sp" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="#FCB122"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:gravity="center"
+            android:paddingVertical="6dp"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:text="LOGIN NOW"
+            android:drawableRight="@drawable/ic_right_arrow_front"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="OR"
+        android:textColor="#777777"
+        android:textSize="20sp" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llone"
+            app:strokeColor="#FCB122"
+            app:strokeWidth="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:layout_gravity="center"
+                android:drawablePadding="9dp"
+                android:text="GO TO HOME"
+                android:drawableRight="@drawable/ic_shopping_basket"
+                android:textColor="#FCB122"
+                android:textSize="18sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

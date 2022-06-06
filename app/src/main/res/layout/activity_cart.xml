@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical"
+    tools:context=".Activity.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/rvup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/offer_image" />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvnoodles"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rvup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-45dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homess" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <RelativeLayout
+        android:id="@+id/rvmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvup"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvbiling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="The Urban Gumti"
+            android:textColor="#1C1C1C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvbilings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvbiling"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_spoon"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="The Urban Gumti"
+            android:textColor="#777777"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvbilings"
+            android:layout_margin="10dp"
+            android:background="#DDDDDD" />
+
+        <RelativeLayout
+            android:id="@+id/rvTug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvbilingss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_discount"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:gravity="center"
+                android:text="50% OFF upto ₹100 use code:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/ic_right_arrow__copy___copy"
+                android:drawablePadding="7dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="center"
+                android:text="View Details"
+                android:textColor="#00A8FF"
+                android:textSize="14sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvcoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lcs"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#dbf3e0"
+                app:cardCornerRadius="7dp"
+                app:strokeColor="#00AB23"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/ic_coupon___copy"
+                    android:drawablePadding="9dp"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="TUG"
+                    android:textColor="#009904"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/lcs"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#F6F6F6"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_search" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvcontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvmiddle"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-25dp"
+        app:cardBackgroundColor="#FCB122"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:gravity="center"
+            android:paddingHorizontal="19dp"
+            android:text="MENU"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvbilinsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvcontinue"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Pasta"
+        android:textColor="#1C1C1C"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lcss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvcontinue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawableRight="@drawable/ic_right_arrow__copy___copy"
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center"
+        android:text="View All"
+        android:textColor="#00A8FF"
+        android:textSize="14sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvPaynow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#FCB122"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="ITEMS 1"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="TOTAL : ₹ 145"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:drawableRight="@drawable/ic_right_arrow__copy"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:gravity="center"
+            android:text="VIEW CART"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

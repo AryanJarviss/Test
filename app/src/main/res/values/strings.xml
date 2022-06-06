@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Global Market</string>
+    //Basics
+    <string name="empty_error">This field can\'t be empty.!</string>
+    <string name="invalid_email">Invalid Email Id</string>
+    <string name="enter_ten_digits_number">Enter 10 digits number</string>
+    <string name="valid_number">Enter Valid Mobile Number.</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="ok">Ok</string>
+
+</resources>
